@@ -7,6 +7,17 @@ variable "appx_tag_name" {}
 variable "appx_vm_count" {}
 variable "appx_vm_name" {}
 
+//---------------------------------------------------------------------
+// Providers
+provider "infoblox" {
+    username = "${var.infoblox_username}"
+    password = "${var.infoblox_password}"
+    host  = "${var.infoblox_host}"
+    sslverify = "${var.infoblox_sslverify}"
+    usecookies = "${var.infoblox_usecookies}"
+}
+
+
 //--------------------------------------------------------------------
 // Modules
 module "appx" {
