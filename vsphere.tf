@@ -7,6 +7,7 @@ variable "appx_tag_name" {}
 variable "appx_vm_count" {}
 variable "appx_vm_name" {}
 
+/*
 //---------------------------------------------------------------------
 // Providers
 provider "infoblox" {
@@ -15,7 +16,8 @@ provider "infoblox" {
     host  = "${var.infoblox_host}"
     sslverify = "${var.infoblox_sslverify}"
     usecookies = "${var.infoblox_usecookies}"
-}
+} 
+*/ 
 
 
 //--------------------------------------------------------------------
